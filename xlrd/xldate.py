@@ -62,7 +62,7 @@ def xldate_as_tuple(xldate, datemode):
         raise XLDateNegative(xldate)
     xldays = int(xldate)
     frac = xldate - xldays
-    seconds = int(round(frac * 86400.0))
+    seconds = int(frac * 86400.0)
     assert 0 <= seconds <= 86400
     if seconds == 86400:
         hour = minute = second = 0
